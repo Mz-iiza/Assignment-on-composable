@@ -1,9 +1,9 @@
 <template>
-    <h1>Color Picker Game</h1>
+    <h1 className="name" >Color Picker Game</h1>
   
-    <div>{{ message }}</div>
+    <div className = "message" >{{ message }}</div>
 
-    <button v-for="color in colours" :key="color" @click="matchColour(color)">{{ color }}</button>
+    <button className="btn" v-for="color in colours" :key="color" @click="matchColour(color)">{{ color }}</button>
   
    
   </template>
@@ -25,5 +25,25 @@
   };
   </script>
   
-  <style></style>
+  <style>
+    .name {
+     color: goldenrod;
+     font-size: 5rem;
+    }
+
+   .message{
+    padding-bottom: 6rem;
+    font-size: 1.5rem;
+   } 
+
+   .btn{
+    padding: 2rem ;
+    border-radius: 50%;
+    font-size: 2rem;
+    width: 9rem;
+    margin: 0 2rem;
+    gap: 1;
+    justify-content: center;
+   }
+  </style>
   
