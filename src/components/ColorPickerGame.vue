@@ -41,8 +41,7 @@
     border-radius: 50%;
     font-size: 2rem;
     width: 9rem;
-    margin: 0 2rem;
-    gap: 1;
+    margin: 2rem 2rem;
     justify-content: center;
    }
   </style>
